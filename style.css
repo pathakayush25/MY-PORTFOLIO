@@ -1,0 +1,9 @@
+a {
+  color: #303030; /* LinkedIn blue */
+  text-decoration: none;
+  margin: 10px;
+}
+
+a:hover {
+  color: #282828;
+}
