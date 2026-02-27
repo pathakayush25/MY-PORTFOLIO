@@ -5,14 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ayush Pathak - Portfolio</title>
 
- <!-- Font Awesome CDN -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-<!-- Font Awesome CDN (only once in your `<head>`) -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-<!-- Font Awesome CDN (if not already added in your <head>) -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-<!-- Font Awesome CDN (only once in your <head>) -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         * {
             margin: 0;
@@ -27,6 +20,7 @@
             line-height: 1.6;
             overflow-x: hidden;
         }
+        
         /* stationary-website-img */
        .Stationary-Website-img{
             width: fit-content;
@@ -47,10 +41,11 @@
             object-fit: cover;
             border-radius: 18px;
         }
-        .phone-icon i {
-       font-size: 30px; ry-website-img;
-        color: #00ffff;
-       transition color 0.3s;
+       .phone-icon i {
+   font-size: 30px;
+   color: #00ffff;
+   transition: color 0.3s;
+}
 }
 
 .phone-icon i:hover {
@@ -586,7 +581,7 @@
         display: block;
         width: fit-content;
     }
-    .grid-item hover {
+   .grid-item:hover  {
             transform: scale(1.05);
             box-shadow: 0 15px 30px rgba(0, 255, 255, 0.3);
         }
@@ -635,7 +630,26 @@
         .link:hover {
             transform: translateY(-2px);
         }
-       
+       @media (max-width:768px){
+.grid{
+grid-template-columns:1fr;
+}
+
+.grid-item{
+padding:15px;
+}
+
+.link{
+display:flex;
+flex-direction:column;
+gap:10px;
+}
+
+.link a{
+width:100%;
+text-align:center;
+}
+}
 
     </style>
 </head>
@@ -669,8 +683,7 @@
         <div class="about-content">
             <div class="about-image">
                 <div class="profile-image">
-                    <!-- Replace 'your-photo-url-here' with the actual URL of your uploaded photo -->
-                    <img src="https://i.postimg.cc/zDt2K3G8/HHH.jpg" alt="Ayush Pathak" style="display: none;" onload="this.style.display='block'; this.parentElement.innerHTML=this.outerHTML;">
+                    <img src="https://i.ibb.co/RTpQg85r/my-photo.jpg" alt="Ayush Pathak" style="display: none;" onload="this.style.display='block'; this.parentElement.innerHTML=this.outerHTML;">
                     <div style="text-align: center;">
                         <div style="font-size: 2rem; margin-bottom: 1rem;">📸</div>
             
@@ -679,17 +692,11 @@
             </div>
             <div class="about-text">
                 <p>
-                    Hi! I'm Ayush Pathak, a hard-working and enthusiastic tech-friendly student with a deep passion for photography and artificial intelligence. 
-                    My dedication and enthusiasm drive me to explore the intersection of technology and creativity, always seeking new ways to innovate and learn.
-                </p>
-                <p>
-                    My journey in technology has been fueled by relentless curiosity and an unwavering work ethic. With great enthusiasm, I dive deep into understanding 
-                    how AI can transform our world. When I'm not coding or experimenting with AI models, you'll find me behind the camera, capturing the beauty of everyday moments 
-                    with the same passion I bring to everything I do.
-                </p>
-                <p>
-                    I believe in the power of hard work and continuous learning. My enthusiasm for technology and determination to excel make me always excited 
-                    to take on new challenges that push the boundaries of what's possible.
+                    Hello, I am Ayush Pathak, a dedicated and enthusiastic engineering student with a strong passion for Artificial Intelligence and emerging technologies. I am driven by curiosity, discipline, and a constant desire to learn and innovate.
+</p>
+<p>I am a proud member of IEEE, where I contribute as part of the Marketing Team. This role has strengthened my communication skills, strategic thinking, and professional collaboration abilities. I possess strong teamwork qualities and have demonstrated leadership skills by effectively coordinating and guiding team efforts toward shared objectives.
+
+With a proactive mindset and commitment to continuous improvement, I am always eager to take on new challenges that contribute meaningfully to the evolving world of technology.
                 </p>
             </div>
         </div>
@@ -697,9 +704,9 @@
         <!-- Skills Section -->
         <div class="skills">
             <div class="skill-card">
-                <div class="skill-icon">📸</div>
-                <h3>Photography</h3>
-                <p>Capturing moments and telling stories through the lens</p>
+                <div class="skill-icon">🧩</div>
+                <h3>Problem-Solving Ability</h3>
+                <p>Strong analytical and logical thinking skills to tackle complex challenges effectively</p>
             </div>
             <div class="skill-card">
                 <div class="skill-icon">🤖</div>
@@ -790,7 +797,7 @@
             <div class="contact-info">
                 <div class="contact-item">
                   <!-- Email Icon -->
-<a href="pathakayush920@gmail.com" class="email-icon">
+<a href="mailto:pathakayush920@gmail.com" class="email-icon">
   <i class="fas fa-envelope"></i>
 </a>
                     <div>
